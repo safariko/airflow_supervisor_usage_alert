@@ -108,6 +108,7 @@ def sendEmail(email_dict):
     msg.attach(MIMEText(body, 'plain'))
 
     try:
+        server = smtplib.SMTP('smtp.outlook.com', 587)
         server.starttls()
         server.login(FROM_ADDRESS, FROM_PSWD)
         text = msg.as_string()
