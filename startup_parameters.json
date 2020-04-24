@@ -1,0 +1,15 @@
+{
+  "Production": {
+    "Email": {
+      "FromAddress": 
+      "FromPSWD": 
+      "ToAddress": 
+      "CcAddress": 
+      "BccAddress":
+    },
+    "Servers": {
+      "name": "ssh -i *.pem ubuntu@dummy.com 'cat /proc/sys/fs/file-nr && exit'",
+    }
+  }
+}
+
